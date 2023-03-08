@@ -1,0 +1,324 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  transition: all .2s ease-in;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root
+{
+  --main-color : #ff702a;
+  --text-color : #fff;
+  --bg-color : #1e1c2a;
+  --big-font : 5rem;
+  --h2-font : 2.25rem;
+  --p-font : 0.9rem;
+}
+
+*::selection
+{
+  background: #2A403D;
+  color : #fff;
+}
+body
+{
+  color: yellow;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-image: url('backg.jpg');
+}
+header
+{
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: rgba(42, 64, 61, 0.59);
+
+}
+.logo
+{
+  color: #ff702a;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.logo span
+{
+  color: yellow;
+}
+.navbar
+{
+  display: flex;
+}
+.navbar a
+{
+  color: #C3CBD6;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+.navbar a:hover
+{
+  color: yellow;
+
+  transition: 0.4s;
+}
+.navbar li:hover{
+  transform: scale(110%);
+
+}
+section
+{
+  background-color: rgba(30,30,30,.8);
+  padding: 70px 15%;
+}
+.home
+{
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+.home-text h1
+{
+  font-size: 5rem;
+  color: rgb(255, 255, 255);
+  padding-top: 80px;
+}
+.home-text h2
+{
+  font-size: 3rem;
+  margin: 1rem 0 2rem;
+}
+
+
+---------------------------------
+/* .search
+{
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  width: 35vw;
+  background-color: #f8f8f8;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  font-size: 17px;
+  margin-left: 120px;
+}
+input[type=text]
+{
+  width: 20vw;
+  padding: 12px;
+  border: none;
+  background-color: transparent;
+  font-size: 17px;
+  border-radius: 10px ;
+}
+.search button
+{
+  padding: 12px;
+  margin: 0px 0px 0px 50px;
+  font-size: 17px;
+  border: none;
+  background-color: #ddd;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.search button:hover
+{
+  background-color: #2A403D;
+  color: white;
+  transition: 0.4s all;
+} */
+
+.container
+{
+  min-height: 100vh;
+  padding: 5%;
+  display: flex;
+}
+
+.search-bar
+{
+  margin-left: 50%;
+  width: 100%;
+  max-width: 700px;
+  background: rgba(255,255,255,0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px 20px;
+  backdrop-filter: blur(4px) saturate(180%);
+}
+.search-bar input
+{
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 24px 20px;
+  font-size: 20px;
+  color: #cac7ff;
+}
+::placeholder
+{
+  color: white;
+  font-size: 18px;
+}
+.search-bar button img
+{
+  width: 25px;
+}
+.search-bar button
+{
+  border: 0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: #58629b;
+  cursor: pointer;
+}
+#copy
+{
+  margin-left: 33%;
+  margin-top: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------
+
+
+
+
+.cta
+{
+  background: #feeee7;
+  padding: 70px 0;
+  text-align: center;
+  width: 66%;
+  margin: 100px auto;
+  border-radius: 10px;
+}
+.cta h2
+{
+  font-size: 2rem;
+  color:  #C70039;
+  margin-bottom: 30px;
+}
+.main
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer
+{
+  padding: 10px 0;
+}
+.col
+{
+  width: 25%;
+}
+.col h4
+{
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 25px;
+  position: relative;
+}
+.col h4::before
+{
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 50px;
+  left: 0;
+  bottom: -8px;
+  background: #feeee7;
+}
+.col ul li:not(last-child)
+{
+  margin-bottom: 15px;
+}
+.col ul li a
+{
+  color: #2A403D;
+  font-size: 1.1rem;
+  display: block;
+  text-transform: capitalize;
+  transition: 0.4s;
+}
+.col ul li a:hover
+{
+  color: yellow;
+  transform: translateX(-12px);
+}
+.col .social
+{
+  width: 220px;
+  display:block;
+  align-items: center;
+
+}
+.col .social a
+{
+  height: 40px;
+  width: 40px;
+  background: #2A403D;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+.col .social a:hover
+{
+  transform: scale(1.2);
+  background: white;
+
+}
+#contact{
+
+  background-color: #2A403D;
+}
+#contact a{
+  color:white;
+}
+#contact a:hover{
+  color:black;
+}

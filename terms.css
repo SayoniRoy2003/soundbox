@@ -1,0 +1,32 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  transition: all .2s ease-in;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+body
+{
+  background: #748B6F;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inner-container
+{
+  width: 75%;
+  padding: 70px;
+  margin-left: 13%;
+  background: white;
+}
+.about-section h1
+{
+  padding-left: 40%;
+  margin-bottom: 13px;
+}
